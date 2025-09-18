@@ -1,0 +1,21 @@
+
+
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend_c
+    ports:
+      - '5173:5173'   # host:container
+    command: npm run dev -- --host 0.0.0.0
+    depends_on:
+      - backend
+
+  backend:
+    build: ./Backend
+    container_name: backend_c
+    ports:
+      - '4000:4000'
+    environment:
+      - MONGO_URI=mongodb+srv://chandimasandamali2002_db_user:9XNrdMN9u8L1hgAb@cluster0.j2e0bmm.mongodb.net/foody_db?retryWrites=true&w=majority&appName=Cluster0
+    stdin_open: true
+    tty: true

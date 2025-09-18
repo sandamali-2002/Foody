@@ -1,0 +1,76 @@
+/* General wrapper */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #201d17, #000000);
+  color: #fff;
+  padding: 20px;
+}
+
+/* Form box */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Form title */
+form h2 {
+  text-align: center;
+  color: #00bfff;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Input fields */
+form input {
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(105, 105, 105, 0.5);
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #00bfff;
+}
+
+/* Buttons */
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #00bfff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00bfff96;
+}
+
+/* Links (if needed) */
+.form-container a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
